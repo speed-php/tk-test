@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TK Sider - Implementos Rodoviários</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #001;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #cc0000;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact, .footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer {
+      font-size: 0.9em;
+      color: #666;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #cc0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background: #a30000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="TK Sider Logo">
+  </header>
+
+  <section>
+    <h1>TK Sider</h1>
+    <p>Venda de sider e baús novos e seminovos. Peças e consertos gerais em baú e sider.</p>
+  </section>
+
+  <section>
+    <h2>Galeria de Caminhões</h2>
+    <div class="gallery">
+      <img src="caminhao1.png" alt="Caminhão 1">
+      <img src="caminhao2.png" alt="Caminhão Antes e Depois">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contato</h2>
+    <p>Telefone: (41) 99882-2747</p>
+    <p>Endereço: R. Estr. da Graciosa, 5051 - Jardim Patricia, Quatro Barras - PR, 83420-000</p>
+    <p>Site: <a href="https://www.tksider.com.br" target="_blank">www.tksider.com.br</a></p>
+    <a class="button" href="https://www.instagram.com/tksiderimplementosrodoviarios/" target="_blank">Visite nosso Instagram</a>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 TK Sider. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
