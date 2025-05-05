@@ -1,79 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TKSider Implementos Rodoviários</title>
+  <title>TK Sider - Implementos Rodoviários</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    body { background-color: #f5f5f5; color: #333; }
-    header { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
-    nav { display: flex; justify-content: center; background-color: #333; }
-    nav a { color: white; padding: 15px 20px; text-decoration: none; }
-    nav a:hover { background-color: #555; }
-    .banner {
-      background-image: url('https://via.placeholder.com/1400x400');
-      background-size: cover; background-position: center; height: 400px;
-      display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 2rem; text-shadow: 2px 2px 4px #000;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
     }
-    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .section h2 { margin-bottom: 20px; color: #1a1a1a; }
-    .produtos-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+    header {
+      background: #001;
+      padding: 20px;
+      text-align: center;
     }
-    .produto {
-      background: white; padding: 15px; border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center;
+    header img {
+      max-width: 300px;
+      height: auto;
     }
-    .produto img { max-width: 100%; height: auto; border-radius: 5px; }
-    footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #cc0000;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact, .footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer {
+      font-size: 0.9em;
+      color: #666;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #cc0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background: #a30000;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>TKSider Implementos Rodoviários</h1>
-    <p>Qualidade e inovação para o transporte pesado</p>
+    <img src="logo.png" alt="TK Sider Logo">
   </header>
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-  <div class="banner">Bem-vindo à TKSider</div>
-  <section class="section" id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>A TKSider é referência no desenvolvimento e fabricação de implementos rodoviários, com foco em qualidade, durabilidade e tecnologia de ponta.</p>
+
+  <section>
+    <h1>TK Sider</h1>
+    <p>Venda de sider e baús novos e seminovos. Peças e consertos gerais em baú e sider.</p>
   </section>
-  <section class="section" id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="produtos-grid">
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-        <h3>Sider Rebaixado</h3>
-        <p>Alta resistência e versatilidade para o transporte de cargas diversas.</p>
-      </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-        <h3>Baú Alumínio</h3>
-        <p>Leveza e durabilidade para o transporte urbano e rodoviário.</p>
-      </div>
-      <div class="produto">
-        <img src="https://via.placeholder.com/300x200" alt="Produto 3">
-        <h3>Graneleiro</h3>
-        <p>Projetado para otimizar o escoamento da produção agrícola.</p>
-      </div>
+
+  <section>
+    <h2>Galeria de Caminhões</h2>
+    <div class="gallery">
+      <img src="caminhao1.png" alt="Caminhão 1">
+      <img src="caminhao2.png" alt="Caminhão Antes e Depois">
     </div>
   </section>
-  <section class="section" id="contato">
+
+  <section class="contact">
     <h2>Contato</h2>
-    <p>Email: contato@tksider.com.br</p>
-    <p>Telefone: (11) 99999-9999</p>
-    <p>Endereço: Rod. Exemplo, 1234 - São Paulo, SP</p>
+    <p>Telefone: (41) 99882-2747</p>
+    <p>Endereço: R. Estr. da Graciosa, 5051 - Jardim Patricia, Quatro Barras - PR, 83420-000</p>
+    <p>Site: <a href="https://www.tksider.com.br" target="_blank">www.tksider.com.br</a></p>
+    <a class="button" href="https://www.instagram.com/tksiderimplementosrodoviarios/" target="_blank">Visite nosso Instagram</a>
   </section>
-  <footer>
-    <p>&copy; 2025 TKSider Implementos Rodoviários. Todos os direitos reservados.</p>
+
+  <footer class="footer">
+    &copy; 2025 TK Sider. Todos os direitos reservados.
   </footer>
 </body>
 </html>
